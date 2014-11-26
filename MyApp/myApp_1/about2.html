@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>How to play with this app~</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h2>How to play with this app~</h2>
+
+<p>Well, the sidebar include 5 sections. Let me introduce you from top of the sidebar to the bottom.</p>
+
+<pre><code>Section 1: Basic coodinate system.
+The X and Y select boxs allow you to choose two variables as the x and y of the plot.
+</code></pre>
+
+<pre><code>Section 2: Change the color of the dots in plot.
+The Color selec box allow you to choose a variable and change the color of the dots in the plot.
+Color here is different from &quot; color &quot; people usually refer to.
+It&#39;s not single color like red or blue, but to map the values of the Color variable into the x and y , and create a 3D like plot. ( pardon me for my poor English, I will use an example to explain this)
+For instance, 
+If I choose mpg as X, cyl as Y, you can see that the dots distribute in 3 lines: y=8, y=6 and y=4, that&#39;s because the cyl variable only has 3 levels. 
+Then, if I choose vs as Color, you can see that some dots&#39; color have been changed: dots on line y=8 are mainly darkblue, 2 dots on line y=6 are bright blue, and 3 dot on line y=4 is darkblue. Recall that variable am has only 2 levels. So the divergence in color reflect sample&#39;s vs value: the dots in the left-downside of the plot reflect that this car has 4 cylinders, it uses nearly 34 gallon petrol per mile and it&#39;s a manual one; on contrary, the dots in the right-upperside of the plot reflet that this car has 8 cylinders, it uses nearly 11 gallon petrol per mile and it&#39;s a automatic one.
+See? This is how the Color variable could use the 2D plot to reflect 3 dimentional information.
+</code></pre>
+
+<pre><code>Section 3: Jitter or smooth.
+For people want to perform a regression model on the dataset, you will want to select a way to fit a line to the data. Well, here you can choose the Smooth checkbox and it will present you with a smooth line of regression.
+For people want to see the whole picture of the dataset, you can choose the Jitter checkbox and it will show all the samples within the dataset on the plot.
+</code></pre>
+
+<pre><code>Section 4: Biggest advantage of ggplot2: facets
+Sometimes the dataset is too big and you want to separate the plot into different catagories, creating facets will satisfy your need.
+</code></pre>
+
+</body>
+
+</html>
+
